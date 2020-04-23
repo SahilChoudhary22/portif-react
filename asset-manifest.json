@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portif-react/static/css/main.d8842bd7.chunk.css",
-    "main.js": "/portif-react/static/js/main.dfb34cdc.chunk.js",
-    "main.js.map": "/portif-react/static/js/main.dfb34cdc.chunk.js.map",
+    "main.css": "/portif-react/static/css/main.fc2a4d9e.chunk.css",
+    "main.js": "/portif-react/static/js/main.95b8b3ce.chunk.js",
+    "main.js.map": "/portif-react/static/js/main.95b8b3ce.chunk.js.map",
     "runtime-main.js": "/portif-react/static/js/runtime-main.99a2426a.js",
     "runtime-main.js.map": "/portif-react/static/js/runtime-main.99a2426a.js.map",
     "static/js/2.6712e69f.chunk.js": "/portif-react/static/js/2.6712e69f.chunk.js",
     "static/js/2.6712e69f.chunk.js.map": "/portif-react/static/js/2.6712e69f.chunk.js.map",
     "index.html": "/portif-react/index.html",
-    "precache-manifest.42b62ca4a33764ee389bd4fecbafba11.js": "/portif-react/precache-manifest.42b62ca4a33764ee389bd4fecbafba11.js",
+    "precache-manifest.04f7aa28da06b500073cc1cbc1c9f145.js": "/portif-react/precache-manifest.04f7aa28da06b500073cc1cbc1c9f145.js",
     "service-worker.js": "/portif-react/service-worker.js",
-    "static/css/main.d8842bd7.chunk.css.map": "/portif-react/static/css/main.d8842bd7.chunk.css.map",
+    "static/css/main.fc2a4d9e.chunk.css.map": "/portif-react/static/css/main.fc2a4d9e.chunk.css.map",
     "static/js/2.6712e69f.chunk.js.LICENSE.txt": "/portif-react/static/js/2.6712e69f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.99a2426a.js",
     "static/js/2.6712e69f.chunk.js",
-    "static/css/main.d8842bd7.chunk.css",
-    "static/js/main.dfb34cdc.chunk.js"
+    "static/css/main.fc2a4d9e.chunk.css",
+    "static/js/main.95b8b3ce.chunk.js"
   ]
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "595bed5d8bae6263b58bd9f61bfcf07b",
+    "revision": "d1e0fcadadd3f1764419759be9fb0416",
     "url": "/portif-react/index.html"
   },
   {
-    "revision": "e7fb012d6dedec9ffed9",
-    "url": "/portif-react/static/css/main.d8842bd7.chunk.css"
+    "revision": "2aea7189d3a377b26e0f",
+    "url": "/portif-react/static/css/main.fc2a4d9e.chunk.css"
   },
   {
     "revision": "529fcc81c392bac7f681",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portif-react/static/js/2.6712e69f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e7fb012d6dedec9ffed9",
-    "url": "/portif-react/static/js/main.dfb34cdc.chunk.js"
+    "revision": "2aea7189d3a377b26e0f",
+    "url": "/portif-react/static/js/main.95b8b3ce.chunk.js"
   },
   {
     "revision": "b8331ab408cf71f8395f",
