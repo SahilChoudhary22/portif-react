@@ -2,39 +2,30 @@ import React from 'react';
 
 function Header() {
     return (
-        <div className="">
-            <nav class="fixed z-100 bg-gray-100 inset-x-0 top-0 border-b-2 border-gray-200 lg:border-b-0 lg:static flex items-center">
-                <div class="w-full max-w-screen-xl relative mx-auto px-6 py-3 border-b-3 border-gray-200 ">
-                    {/* <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg> */}
-                    <span class="font-semibold text-3xl tracking-tight text-gray-800 border-b-4 border-gray-300 pb-2 " children="<portfolio>" />
-                    
-            </div>
-            
-            <div class="block lg:hidden">
-                <button class="flex items-center px-3 py-2 border rounded text-gray-800 border-teal-400 hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3 text-gray-800" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
-                </button>
-            </div>
-            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="text-sm lg:flex-grow">
-                    <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-white mx-4">
-                        GitHub
-      </a>
-                    <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-white mx-4">
-                        LinkedIn
-      </a>
-                    <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-800 hover:text-white mx-4">
-                        Resume
-      </a>
-                </div>
-                <div>
-                    <a href="google.com" class="inline-block text-sm px-4 py-2 leading-none border rounded text-gray-800 border-black hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Hire Me</a>
-                </div>
-            </div>
-            
-        </nav><div class="pb-2">.</div></div >
+        <header className="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 bg-gray-100">
+        <div className="flex-1 flex justify-between items-center">
+          <a href="#">
+            <span class="font-semibold text-3xl tracking-tight text-gray-800 border-b-4 border-gray-300 pb-3 " children="<portfolio>" />
+          </a>
+        </div>
+        <label htmlFor="menu-toggle" className="pointer-cursor lg:hidden block"><svg className="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg></label>
+        <input className="hidden" type="checkbox" id="menu-toggle" />
+        <div className="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+          <nav>
+            <ul className="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+              <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 mt-2" href="https://www.linkedin.com/in/sahil-dev/">LinkedIn</a></li>
+              <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 mt-2" href="https://github.com/SahilChoudhary22">Github</a></li>
+              <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 mt-2" href="#">Resume</a></li>
+              <li><button class="transition duration-500 ease-in-out bg-blue-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 bg-blue-500 text-white font-bold mt-2 py-2 px-4 rounded">Hire Me
+</button></li>
+            </ul>
+          </nav>
+          <a href="#" className="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
+            <img className="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="https://avatars3.githubusercontent.com/u/40566635?s=460&u=592a18865cceebe1686db58f8271a4a375b9c4af" alt="Sahil Choudhary" />
+          </a>
+        </div>
+      </header>
     );
-
 }
 
 export default Header;

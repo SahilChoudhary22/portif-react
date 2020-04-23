@@ -12,6 +12,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.wideFonta {
+    font-family: 'Manrope', sans-serif;
+}
+
+#menu-toggle:checked + #menu {
+    display: block;
+}
+
 #toMove1d {
     animation: bars 2s infinite;
     animation-direction: alternate;
