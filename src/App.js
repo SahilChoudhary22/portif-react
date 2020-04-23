@@ -1,8 +1,9 @@
 import React from 'react';
 import './styles/main.css';
 import { p1, p2, p3, p4 } from './components/projects';
+import Typing from 'react-typing-animation';
 
-const markup =
+const markup =<Typing speed={75}> 
   <ul>
     <li>const state = {}</li>
     <li> </li>
@@ -31,8 +32,7 @@ const markup =
     <li>others: "GitHub, Linux, "</li>
     <li></li>
     <li children="}" />
-  </ul>
-
+  </ul></Typing>
   ;
 
 
@@ -42,32 +42,51 @@ const markup =
 
 
 function App() {
+  function incPaddingConsole(e) {
+    e.target.style.width = "1rem";
+  }
+
+  function decPaddingConsole(e) {
+    e.target.style.width = "0.75rem";
+  }
+
+
+
   return (
     <div>
       <div className="grid mx-auto p-4 px-48 grid-cols-8 gap-4" >
         <div class=" col-span-4 w-full min-w-full max-w-sm w-full lg:max-w-full">
-          <div className="leading-loose ">Hey there, I'm</div>
-          <div className="font-semibold text-3xl leading-loose tracking-wider font-black subpixel-antialiased text-5xl font-sans">Sahil Choudhary</div>
-          <div className="leading-loose">currently residing in Delhi, India.</div>
+          <div className="namemy font-semibold text-xl text-gray-800">Hey there, I'm</div>
+          <div className="font-bold text-5xl tracking-wider subpixel-antialiased text-gray-800 namemy">Sahil Choudhary</div>
+          <div className="font-semibold leading-loose namemy text-xl text-gray-800 ">currently residing in<span className="text-orange-500"> Delhi, India.</span> </div>
 
-          <div className="container mx-auto p-4 px-10 leading-loose " >
-            <div>I build elegant and functional web applications with clean and intuitive user interface.</div>
+          <div className="container mx-auto p-4 px-10 leading-loose text-xl text-gray-800" >
+            <div className="font-semibold">I love to code and work on <span>interesting projects.</span></div>
+            <div className="font-semibold">Know more about me</div>
+            <hr />
+            <ul className="font-bold">
+              <span>↓</span>
+              <li>Projects</li>
+              <li>GitHub</li>
+              <li>LinkedIn</li>
+              <li>Resume</li>
+              </ul>
           </div></div>
 
         <div class="bg-gray-200 col-span-4">
-          <div className="shadow-lg code-white text-sm font-mono subpixel-antialiased bg-gray-800 px-5 pb-6 pt-4 rounded-lg leading-normal overflow-hidden">
+          <div className="shadow-lg code-white text-sm font-mono subpixel-antialiased bg-gray-800 px-5 pb-6 pt-4 rounded-lg leading-normal overflow-hidden h-auto w-auto">
             <div className="flex mb-4 space-x-1">
-              <span className="h-3 w-3 bg-red-500 rounded-full"></span>
-              <span className="h-3 w-3 bg-orange-300 rounded-full"></span>
-              <span className="h-3 w-3 bg-green-500 rounded-full"></span>
+              <span onMouseEnter={incPaddingConsole} onMouseLeave={decPaddingConsole} className="h-3 w-3 bg-red-500 rounded-full"></span>
+              <span onMouseEnter={incPaddingConsole} onMouseLeave={decPaddingConsole} className="h-3 w-3 bg-orange-300 rounded-full"></span>
+              <span onMouseEnter={incPaddingConsole} onMouseLeave={decPaddingConsole} className="h-3 w-3 bg-green-500 rounded-full"></span>
             </div>
-            <div className="full text-white">
+            <div className="full text-white consoEmu text-xl">
               {markup}
             </div>
           </div>
         </div></div>
-      <div class="flex w-screen mx-auto mb-4">
-        <svg class= "flex-grow" width="3795" height="333" viewBox="0 0 3795 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="flex w-screen">
+        <svg class= "w-1/2 mx-auto" width="3795" height="333" viewBox="0 0 3795 333" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="gg1">
             <path id="path1134" d="M211.926 313.146C211.926 319.36 217.471 324.443 224.247 324.443H226.592C233.368 324.443 238.913 319.36 238.913 313.146V45.6695C238.913 39.4554 233.368 34.3711 226.592 34.3711H224.247C217.471 34.3711 211.926 39.4554 211.926 45.6695V313.146Z" fill="#5C65D5" />
             <path id="path1136" d="M275.424 312.279C275.424 318.969 269.879 324.443 263.103 324.443H260.758C253.982 324.443 248.437 318.969 248.437 312.279V24.2889C248.437 17.5975 253.982 12.1237 260.758 12.1237H263.103C269.879 12.1237 275.424 17.5975 275.424 24.2889V312.279Z" fill="#5C65D5" />
@@ -168,15 +187,14 @@ function App() {
           </g>
         </svg>
       </div>
+      <Typing><h2 class="text-center text-3xl consoEmu">Projects</h2></Typing>
 
 
 
       <div className="grid mx-auto p-4 px-48 grid-cols-8 gap-4" >
         <div class="bg-gray-100 col-span-8">
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Woman holding a mug">
-            </div>
-            <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="border-r border-b border-l border-gray-400 lg:border-l-1 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
               <div class="mb-8">
                 <p class="text-sm text-gray-600 flex items-center">
                   {p1.type}</p>
@@ -197,9 +215,7 @@ function App() {
 
         <div class="bg-gray-100 col-span-8">
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Woman holding a mug">
-            </div>
-            <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="border-r border-b border-l border-gray-400 lg:border-l-1 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
               <div class="mb-8">
                 <p class="text-sm text-gray-600 flex items-center">
                   {p2.type}</p>
@@ -220,9 +236,7 @@ function App() {
 
         <div class="bg-gray-100 col-span-8">
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Woman holding a mug">
-            </div>
-            <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="border-r border-b border-l border-gray-400 lg:border-l-1 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
               <div class="mb-8">
                 <p class="text-sm text-gray-600 flex items-center">
                   {p3.type}</p>
@@ -243,9 +257,7 @@ function App() {
 
         <div class="bg-gray-100 col-span-8">
           <div class="max-w-sm w-full lg:max-w-full lg:flex">
-            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" title="Woman holding a mug">
-            </div>
-            <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+            <div class="border-r border-b border-l border-gray-400 lg:border-l-1 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
               <div class="mb-8">
                 <p class="text-sm text-gray-600 flex items-center">
                   {p4.type}</p>

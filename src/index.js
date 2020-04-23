@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './components/header';
 import App from './App';
+import Footer from './components/footer';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -10,6 +11,7 @@ ReactDOM.render(
     <Header/>
 
     <App />
+    <Footer/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
