@@ -3,3 +3,27 @@
 @tailwind components;
 
 @tailwind utilities;
+
+#toMove1d {
+    animation: bars 2s infinite;
+    animation-direction: alternate;
+}
+
+#toMove2d {
+    animation: bars 2s infinite;
+    animation-direction: alternate;
+}
+
+#toMove3d {
+    animation: bars 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bars {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(0,50px);
+    }
+}

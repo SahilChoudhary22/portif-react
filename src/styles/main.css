@@ -11895,6 +11895,95 @@ video {
   transition-delay: 1000ms;
 }
 
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+.hover\:bounce:hover {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+.hover\:pulse:hover {
+  animation-name: pulse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reduced-motion\:bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  .reduced-motion\:pulse {
+    animation-name: pulse;
+  }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#toMove1d {
+  animation: bars 2s infinite;
+  animation-direction: alternate;
+}
+
+#toMove2d {
+  animation: bars 2s infinite;
+  animation-direction: alternate;
+}
+
+#toMove3d {
+  animation: bars 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bars {
+  from {
+    transform: translate(0,0);
+  }
+
+  to {
+    transform: translate(0,50px);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
@@ -23183,6 +23272,35 @@ video {
 
   .sm\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .sm\:bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  .sm\:pulse {
+    animation-name: pulse;
+  }
+
+  .sm\:hover\:bounce:hover {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  .sm\:hover\:pulse:hover {
+    animation-name: pulse;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sm\:reduced-motion\:bounce {
+      animation-name: bounce;
+      transform-origin: center bottom;
+    }
+
+    .sm\:reduced-motion\:pulse {
+      animation-name: pulse;
+    }
   }
 }
 
@@ -34475,6 +34593,35 @@ video {
   .md\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .md\:bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  .md\:pulse {
+    animation-name: pulse;
+  }
+
+  .md\:hover\:bounce:hover {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  .md\:hover\:pulse:hover {
+    animation-name: pulse;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .md\:reduced-motion\:bounce {
+      animation-name: bounce;
+      transform-origin: center bottom;
+    }
+
+    .md\:reduced-motion\:pulse {
+      animation-name: pulse;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -45766,6 +45913,35 @@ video {
   .lg\:delay-1000 {
     transition-delay: 1000ms;
   }
+
+  .lg\:bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  .lg\:pulse {
+    animation-name: pulse;
+  }
+
+  .lg\:hover\:bounce:hover {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  .lg\:hover\:pulse:hover {
+    animation-name: pulse;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lg\:reduced-motion\:bounce {
+      animation-name: bounce;
+      transform-origin: center bottom;
+    }
+
+    .lg\:reduced-motion\:pulse {
+      animation-name: pulse;
+    }
+  }
 }
 
 @media (min-width: 1280px) {
@@ -57056,5 +57232,34 @@ video {
 
   .xl\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .xl\:bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  .xl\:pulse {
+    animation-name: pulse;
+  }
+
+  .xl\:hover\:bounce:hover {
+    animation-name: bounce;
+    transform-origin: center bottom;
+  }
+
+  .xl\:hover\:pulse:hover {
+    animation-name: pulse;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .xl\:reduced-motion\:bounce {
+      animation-name: bounce;
+      transform-origin: center bottom;
+    }
+
+    .xl\:reduced-motion\:pulse {
+      animation-name: pulse;
+    }
   }
 }
