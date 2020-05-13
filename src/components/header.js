@@ -21,13 +21,14 @@ function Header() {
             <ul className="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
               <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 mt-2" href="https://www.linkedin.com/in/sahil-dev/">LinkedIn</a></li>
               <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 mt-2" href="https://github.com/SahilChoudhary22">Github</a></li>
-              <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 mt-2" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1n2PpcfEzrZ_l8SKMCv9fGZoHy_OSudk5/view?usp=sharing">Resume</a></li>
+              <li><a className="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 mt-2" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1I8YkWMv5fgZJMhqKjwxglURLA_oxifUh/view?usp=sharing">Resume</a></li>
               <li><a href="mailto:sahil.codes.it@gmail.com?Subject=Recruitment%20Proposal" class="transition duration-500 ease-in-out bg-blue-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 bg-blue-500 text-white font-bold mt-2 py-2 px-4 rounded mr-2">Hire Me
 </a></li>
             </ul>
           </nav>
           <a href="https://github.com/SahilChoudhary22" className="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
-            <img className="rounded-m w-10 h-15 border-2 border-transparent hover:border-indigo-400 rotatorPro ml-3" src="https://i.ibb.co/J7XNcw0/icon.png" alt="Sahil Choudhary" />
+        
+            <img className="rounded-m w-10 h-15 border-2 border-transparent hover:border-indigo-400 rotatorPro ml-3" src="https://i.ibb.co/khKmWkZ/iconMe.png" alt="Sahil Choudhary" />
           </a>
         </div>
       </header>
